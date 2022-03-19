@@ -1,0 +1,94 @@
+/* Navigation Page CSS */
+/*#data, #signOutBtn {
+    visibility: hidden;
+}*/
+
+/* Buttons */
+.button {
+    font-weight: 700;
+    display: block;
+    padding: 0.4em 0.4em 0.4em 0;
+    width: 150px;
+    font-size: 16px;
+    border: 0.1em solid;
+}
+
+/* Footer buttons */
+.navbar {
+    margin-top: 20px;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.navbar-nav {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.navbar a {
+    float: left;
+    text-decoration: none;
+}
+
+.navbar ul {
+    margin: 0;
+    list-style: none;
+}
+
+/* Border */
+#border {
+    padding: 20px 20px;
+}
+
+/* Adds padding to text and buttons in the Menu */
+.paddingLeft {
+    padding-left: 30%;
+}
+
+/* Favourite route star */
+li {
+    float: left;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.highlight, #fav.selected {
+    color: #F4B30A;
+    text-shadow: 0 0 1px #F48F0A;
+}
+
+/* Menu */
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    opacity: 0.95;
+    overflow-x: auto;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    z-index: 10;
+    padding: 10px 0 0 30px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.side-nav .close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+}
+
+

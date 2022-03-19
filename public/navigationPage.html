@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buckingham Building Navigation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/navigationPage.css">
+    <link rel="stylesheet" href="/src/css/themes.css">
+    <link rel="manifest" href="/manifest.json">
+
+</head>
+<body>
+<div id="border">
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li>
+              <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                  <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#6D1D6B" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#6D1D6B" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#6D1D6B" stroke-width="5"/>
+                  </svg>
+                </a>
+              </span>
+                <div id="side-menu" class="side-nav">
+                    <a href="#" class="close" onclick="closeSlideMenu()">&times;</a>
+                    <h4 class="paddingLeft">Menu</h4>
+
+                    <h5 id="guest" class="paddingLeft">Guest</h5>
+                    <div class="data">
+                        <p id="name"></p>
+                        <p id="email"></p>
+                    </div>
+
+                    <button class="button" style="margin-left:15%;margin-bottom:15px;"
+                            type="button"> Favourite Routes
+                    </button>
+                    <button class="button" id="aboutButton" style="margin-left:15%;"
+                            type="button"> About
+                    </button>
+                </div>
+            </li>
+            <input type="hidden" name="rating" id="rating"/>
+            <li id="fav" style="padding-bottom:20px">
+                ★
+            </li>
+        </ul>
+    </nav>
+
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header" style="position: center">
+                <span class="closeAboutModalWindow">&times;</span>
+                <h2>About</h2>
+            </div>
+            <div class="modal-body">
+                <h4>
+                    This indoor navigation application was done as a part of my Final Year Project. Its aim is to allow
+                    students to navigate easily towards reaching their tutor’s room inside Buckingham building.
+                    Currently, the development of the prototype will avoid requiring personal data and will work with
+                    dummy user data. For future work, the application will ask users to sign up to Google in order to
+                    access their timetable. The ethical, social and professional issues arising from the access of user
+                    data will be managed by Google.
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar">
+    <ul class="navbar-nav">
+        <li>
+            <button class="button" id="backBtn"
+                    onclick="window.location.href = './index.html';"
+                    type="button">Back
+            </button>
+
+            <button class="button" onclick="window.location.href = './index.html';" onclick="signOut()"
+                    id="signOutBtn" type="button">Sign out
+            </button>
+            </li>
+        <li>
+            <button class="button" onclick="startNavigation()"
+                    type="button">Start
+            </button>
+        </li>
+    </ul>
+</nav>
+
+<script src="/src/js/navigationPage.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>

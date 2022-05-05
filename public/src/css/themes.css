@@ -1,0 +1,91 @@
+/* Dark and Light theme */
+
+/* Button colours */
+.button {
+    color: #000000;
+}
+
+button:hover {
+    color: #FFFFFF;
+    background-color: #92278F;
+}
+
+.button:active {
+    box-shadow: inset -2px -2px 3px #808080,
+    inset 2px 2px 3px #808080;
+}
+
+/* Footer buttons */
+.navbar a {
+    color: black;
+}
+
+li {
+    font-size: 30px;
+    color: #F0F0F0;
+    text-shadow: 0 0 1px #666666;
+}
+
+/* Menu */
+#side-menu {
+    background-color: #92278F;
+}
+
+#side-menu a {
+    color: #ccc;
+}
+
+#side-menu a:hover {
+    color: #fff;
+}
+
+#menuButton:hover {
+    color: #111;
+    background-color: #FFFFFF;
+    box-shadow: inset -2px -2px 3px #808080;
+}
+
+/* Modal Box for Settings/About button on Navigation Page*/
+#aboutModal {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#closeAboutModalWindow {
+    color: white;
+}
+
+#close:hover, #close:focus {
+    color: #000;
+}
+
+#modal-header {
+    background-color: #92278F;
+    color: white;
+    position: center;
+}
+
+/* Headings */
+.heading {
+    color: #92278F;
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1b1818;
+        color: black;
+    }
+
+    #modal-content {
+        background: #1b1818;
+        color: white;
+        border: 1px solid black;
+    }
+}

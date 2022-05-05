@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-client_id"
+          content="289888971873-5686s062sduft6bsupa974vkseg6r7ri.apps.googleusercontent.com">
+    <title>Buckingham Building Navigation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/homePage.css">
+    <link rel="stylesheet" href="/src/css/themes.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+<div id="center">
+    <div id="container">
+        <header>
+            <div>
+                <picture>
+                    <img id="logo" alt="University of Portsmouth Logo" title="University of Portsmouth Logo"
+                         src="/src/images/logo200x70.png">
+                </picture>
+            </div>
+            <div><h1 class="heading">Buckingham Building Navigation</h1></div>
+        </header>
+    </div>
+
+    <div id="signIn" onclick="window.location.href = 'navigationPage.html';" class="g-signin2"
+         data-onsuccess="onSignIn"></div>
+
+    <h2 class="heading">or</h2>
+
+    <button
+            onclick="window.location.href = 'navigationPage.html';"
+            type="button">Continue as a Guest
+    </button>
+</div>
+
+<script src="client.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>
